@@ -16,11 +16,13 @@ page-home {
             }
         }
         .price {
+            border-top: .5px solid map-get($colors, line) !important;
+            width: calc(100% - 20px);
             font-weight: 700;
             position: absolute;
             bottom: 0;
-            right: 10px;
-            color: $light-grren
+            color: $light-grren;
+            margin: 0 10px;
         }
         .overlap {
             position: absolute;
