@@ -1,0 +1,38 @@
+pagination {
+    font-size: 1.4rem;
+	.wrap {
+		border: .5px solid #ccc !important;
+		height: 44px;
+		.page {
+			button[disabled] {
+				background-color: transparent;
+			}		
+			.pageNum {
+				font-size: 1.4rem;
+				padding-left: 0;
+				border: .5px solid #ccc !important;
+				max-width: 50px;
+				min-height: 34px;
+				input[type=number] {
+					 -moz-appearance: textfield;
+					 &::-webkit-inner-spin-button,
+					 &::-webkit-outer-spin-button {
+						-webkit-appearance: none; 
+						margin: 0; 
+					 }
+				}
+				.item-inner {
+					padding-right: 0 !important;;
+					border-bottom: 0 !important;
+					box-shadow: none !important;
+					.input-wrapper {
+						input {
+							padding-right: 0 !important;
+							margin: 0 8px;
+						}
+					}
+				}
+			}
+		}
+	}
+}

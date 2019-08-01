@@ -22,7 +22,13 @@ $app-direction: ltr;
 // To view all the possible Ionic variables, see:
 // http://ionicframework.com/docs/theming/overriding-ionic-variables/
 
-
+$grid-columns: 12 !default;
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px
+);
 
 
 // Named Color Variables
@@ -32,6 +38,13 @@ $app-direction: ltr;
 // to match your app's branding. Ionic uses a Sass map of
 // colors so you can add, rename and remove colors as needed.
 // The "primary" color is the only required color in the map.
+
+/* whites */
+$white: #fff;
+/* blues */
+$purple-bkd: #a4c5df;
+/* greens */
+$light-grren: #0daf4d;
 
 $colors: (
   primary:    #488aff,

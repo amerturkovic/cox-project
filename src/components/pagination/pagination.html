@@ -1,0 +1,28 @@
+<ion-row align-items-center justify-content-center class="wrap">
+    <ion-col col-auto>
+      <ion-row class="page" align-items-center justify-content-center>
+        <ion-col col-auto no-padding>
+          <button ion-button icon-only clear (click)="pageChangeAction('down')" [disabled]="disablePageNav('back')">
+            <ion-icon name="arrow-dropleft" color="dark"></ion-icon>
+          </button>
+        </ion-col>
+        <ion-col col-auto>Page</ion-col>
+        <ion-col ion-item class="pageNum">
+          <ion-input type="number" min="1" max="{{ totalPages }}" clearInput="false" [(ngModel)]="page" (ngModelChange)="pageChangeAction($event)"></ion-input>
+        </ion-col>
+        <ion-col col-auto>of {{ totalPages }}</ion-col>
+        <ion-col col-auto no-padding>
+          <button ion-button icon-only clear (click)="pageChangeAction('up')" [disabled]="disablePageNav('next')">
+            <ion-icon name="arrow-dropright" color="dark"></ion-icon>
+          </button>
+        </ion-col>
+      </ion-row>
+    </ion-col>
+    <ion-col col-auto>
+      <ion-row align-items-right>
+        <ion-col style="text-align: right">
+          {{ data?.length }} records
+        </ion-col>
+      </ion-row>
+    </ion-col>
+  </ion-row>
